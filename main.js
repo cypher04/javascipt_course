@@ -73,5 +73,22 @@ const person = {
 
 }
 
-console.log(person.hobbies[1])
+const todos = [
+    {
+        id: 1,
+        name: 'Seyi',
+        last: 'Abiodun',
+
+    }
+
+    {
+        id: 2,
+        name: 'Ade',
+        Last: 'Mola',
+    }
+]
+
+
+console.log(todos[0].name); //Each array in the array will be treated individually
+console.log(person.hobbies[1]);
 
