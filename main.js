@@ -7,6 +7,7 @@
 //var can be overriden while const can't be
 
 
+/* Program Tutorial start
 let z = 5
 var v = 'Let it rain'
 v = 'else not rain'
@@ -46,7 +47,7 @@ console.log(youve.split(', '));
 
 /* this is 
 for muti line 
-comment*/
+comment
 
 fruits = ['apple', 'graapes', 'mangoes']
 
@@ -72,23 +73,83 @@ const person = {
     }
 
 }
+*/
 
 const todos = [
     {
         id: 1,
         name: 'Seyi',
-        last: 'Abiodun',
+        Last: 'Abiodun',
+        complete: true,
 
-    }
+    },
 
     {
         id: 2,
         name: 'Ade',
         Last: 'Mola',
+        complete: false,
     }
-]
+];
 
+/*
+const todoJSON = JSON.stringify(todos); // This is to fomat the todo array into JSON format
+console.log(todoJSON);
 
 console.log(todos[0].name); //Each array in the array will be treated individually
 console.log(person.hobbies[1]);
+
+
+
+/* FOR LOOP
+
+for (i = 0; i < 10; i++)
+console.log(`Format ${i}`);
+*/
+
+// Looping through an array using FOR loop
+
+/*for (let todo of todos) {
+    console.log(todo.name);
+};
+
+
+//HGHER ORDER ARRAY METHOD: forEch, map, filter
+
+todos.forEach(function(todo){
+    console.log(todo.Last);
+});
+
+const todoText = todos.map(function(todo){
+    return todo.Last;
+});
+console.log(todoText);
+*/
+// using filter + map. this progam will show only the last name tht its complete is true
+
+const todoComplete = todos.filter(function(todo){
+    return todo.complete == true;
+}).map(function(todo){
+    return todo.Last;
+})
+console.log(todoComplete);
+
+/*let total = 0, count = 1;
+while (count <= 10) {
+  total += count; //this can also be written as total = total + count
+  count += 1;
+}
+console.log(total);
+*/
+/* WHILE LOOP
+
+let i = 0;
+
+while(i < 10){
+    console.log(`While Loop ${i} `);
+    i++;
+}
+*/
+
+// Note A JavaScript method is a property containing a function definition.
 
